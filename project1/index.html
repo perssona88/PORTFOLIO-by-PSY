@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당근마켓</title>
+    <style>
+* {padding: 0; margin: 0;}
+ul,li {list-style: none;}
+.inner {width: 1707px; margin: 0 auto;}
+body{overflow-x:hidden;}
+#wrap{ background-color: #f4e0d3;}
+
+/* 헤더 */
+#header{width: 100%; height: 180px; position: relative;}
+.logo{ width: 130px; position: absolute; left: 75px; bottom: 0; margin: 0 auto;}
+.logo>img{width: 100%;}
+.menu{width: 70%; padding-left: 400px; position: absolute;     top: 35px;}
+.search{width: 360px;  height: 110px; position: absolute; right: 75px; 0; bottom: 0; margin: 0 auto;  background-color: #f68b43; text-align: center; }
+.search>p{ color: #fff; line-height: 110px; opacity: .7; position: absolute;  margin: 0px 60px;}
+.search>div{width: 45px; line-height: 110px; position: absolute; right: 20px;     margin: 20px 30px 0; vertical-align: middle;}
+.search>div>img{width: 100%;}
+.menu>li{float: left;  text-align: center; line-height: 180px;  width: 160px; font-weight: bold;}
+.menu:after {        display: block;        content: "";        clear: both;}
+
+/* 메인이미지 */
+#mainimg .inner{width: 100%; height: 761px; background-image:url(img/danggun01.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;}
+        /* 컨텐츠 */
+        .box1 .inner{width: 100%; height: 1170px; background-image:url(img/danggun02.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;}
+        .box2 .inner{width: 100%; height: 1472px; background-image:url(img/danggun03.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;}
+        .box3 .inner{width: 100%; height: 1257px; background-image:url(img/danggun04.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;}
+        .box4 .inner{width: 100%; height: 778px; background-image:url(img/danggun05.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;}
+        /* 푸터 */
+        #footer{width: 100%; height: 160px; position: relative;}
+.logo_f{ width: 130px; position: absolute; left: 75px; margin: 0 auto;}
+.logo_f>img{width: 100%;}
+.app{ width: 370px; position: absolute; right: 75px;  margin: 0 auto;}
+.copy {
+    position: absolute;
+    left: 75px;
+    margin: 30px auto;
+    width: 50%; padding-left: 150px; font-size: 13px; color: #81817c; font-family:Georgia, 'Times New Roman', Times, serif}
+    a{text-decoration: none; color: black;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="inner">
+                <div class="logo"><img src="img/logo.png" alt="logo"></div> 
+                <ul class="menu">
+                    <li>메인</li>
+                    <li>인기매물</li>
+                    <li><a href="sub.html" target="_blank">서비스</a></li>
+                    <li>회사소개</li>
+                    <li>APP 다운로드</li>
+                </ul>
+                <div class="search">
+                    <p>동네 이름,물품명 검색하기</p> 
+                    <div><img src="img/search.png" alt="search"></div>
+                </div>
+        </div>
+            </div>
+            <div id="mainimg">
+                <div class="inner"></div>
+            </div>
+            <div id="contents">
+                <div class="box1"><div class="inner"></div></div>
+                <div class="box2"><div class="inner"></div></div>
+                <div class="box3"><div class="inner"></div></div>
+                <div class="box4"><div class="inner"></div></div>
+            </div>
+            <div id="footer">
+                <div class="inner">
+                    <div class="logo_f"><img src="img/logo_f.png" alt="logo"></div>
+                    <div class="copy"><p>서울특별시 구로구 디지털로30길 28, 609호 (당근서비스)<br> 
+                        고객문의 cs@daangnservice.com 제휴문의 contact@daangn.com</p>
+                        <br>
+                        <p>©Danggeun Market Inc.</p></div>
+                    <div class="app"><img src="img/footer_app.png" alt="app"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

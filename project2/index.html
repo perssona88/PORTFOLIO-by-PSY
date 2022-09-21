@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국항공대학교</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    mobile_menu();
+});
+
+function mobile_menu(){
+    /* 변수 선언 */
+    var $menu = null;
+    var $left_gnb = null; // 영역 전체
+    var $depth1_wrap = null;
+    var $depth1 = null;
+    var $depth1_btn = null;
+    
+    /* 시작 함수 */
+    function start(){
+        init();
+        init_event();
+    }
+    /* 변수 초기화 함수 */
+    function init(){
+        $menu = $('.menu');
+        $left_gnb = $('.left_gnbWrap'); // 영역 전체
+        $depth1_wrap = $('.left_gnb>li');
+        $depth1 = $depth1_wrap.children('ul');
+        $depth1_btn = $depth1_wrap.children('a');
+    }
+    /* 이벤트 함수 */
+    function init_event(){
+        
+        /* 모바일 메뉴 버튼 클릭했을때 모바일 메뉴영역 나오게 하기 */
+        $menu.click(function(event){
+            event.preventDefault();
+            $left_gnb.addClass('on');
+        });
+        
+        /* x버튼 눌렀을때 모바일 메뉴 닫기 */
+        $('.close').click(function(event){
+            event.preventDefault();
+
+            $left_gnb.removeClass('on');
+            
+            // x버튼 누르면 시간차 약간두고 소메뉴 닫히게 하기
+            setTimeout(function(){
+                $depth1_btn.removeClass('on');
+                $depth1.slideUp();
+            },300)
+        });
+        
+        /* depth1의 각메뉴 클릭시 depth2 나오게 하기 */
+        $depth1_btn.click(function(event){
+            event.preventDefault();
+            var $this = $(this);
+            var $this_ul = $this.siblings('ul');
+
+            var check = $this.hasClass('on');
+            if(check){
+                $this.removeClass('on');
+                $this_ul.stop(true,true).slideUp();
+            }else{
+                $depth1_btn.removeClass('on');
+                $depth1.stop().slideUp();
+                $this.addClass('on');
+                $this_ul.stop(true,true).slideDown();
+            }
+        });
+        
+        /* 디바이스 크기 변경시 모바일 메뉴영역 숨기기 */
+        $(window).resize(function(){
+            $left_gnb.removeClass('on');
+        });
+    }
+    
+    start(); // 시작 호출
+}
+</script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul class="h_icon">
+                <li><img src="img/pc01.png" alt="System"></li>
+                <li><img src="img/pc02.png" alt="Register"></li>
+                <li><img src="img/pc03.png" alt="Library"></li>
+                <li><img src="img/pc04.png" alt="Map"></li>
+                <!-- 초기화 -->
+            </ul>
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <div class="h_btn">
+                <div class="btn1"><img src="img/pc05.png" alt="SITEMAP"></div>
+                <div class="btn2"><img src="img/pc06.png" alt="earth"></div>
+                <!-- <div class="btn3"><img src="img/pc07.png" alt="togle "></div> -->
+                <!-- 초기화 -->
+                <div class="menu">
+                    <a href="#"><img src="img/pc07.png" alt=""></a>
+                  </div>
+                  <nav class="left_gnbWrap">
+                              <a href="#" class="close"><img src="img/x_03.png" alt="x"></a>
+                              <ul class="left_gnb">
+                                  <li>
+                                      <a href="#">항대뉴스</a>
+                                      <ul>
+                                          <li><a href="sub.html">교내뉴스</a></li>
+                                          <li><a href="sub.html">피플</a></li>
+                                          <li><a href="sub.html">발전기금</a></li>
+                                          <li><a href="sub.html">홍보자료실</a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#">입학교육</a>
+                                      <ul>
+                                          <li><a href="sub.html">입학안내</a></li>
+                                          <li><a href="sub.html">비행교육원</a></li>
+                                          <li><a href="sub.html">국제교류원</a></li>
+                                          <li><a href="sub.html">항공기술교육원</a></li>
+                                          <li><a href="sub.html">한국항공안전교육원</a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#">연구/산학</a>
+                                      <ul>
+                                        <li><a href="sub.html">산학협력단 소개</a></li>
+                                        <li><a href="sub.html">정보마당</a></li>
+                                        <li><a href="sub.html">연구정보</a></li>
+                                        <li><a href="sub.html">산학협력</a></li>
+                                      </ul>
+                                  </li>
+                                  <li>
+                                      <a href="#">학교소개</a>
+                                      <ul>
+                                          <li><a href="sub.html">비전</a></li>
+                                          <li><a href="sub.html">학교소개</a></li>
+                                          <li><a href="sub.html">학교안내</a></li>
+                                          <li><a href="sub.html">총장실</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </nav>
+            </div>
+            <div class="btn3_m"><img src="img/pc07.png" alt="togle "></div>
+            <!-- 초기화 -->
+        </div>
+        <div id="mainimg">
+            <div class="inner">
+                <div class="main_text">
+                    <h1>학문 간 경계를 넘어선 항공우주 특성화 교육·연구</h1>
+                    <p>미래 유망 산업인 ‘항공 기술’과 ‘항공 서비스’를 항공우주특성화 교육 분야로 선정하여 사회가 원하는 맞춤형 인재를 양성합니다.</p>
+                </div>
+                <div class="m_text">
+                    <h1>학문 간 경계를 넘어선<br>항공우주 특성화 교육·연구</h1>
+                    <p>미래 유망 산업인 ‘항공 기술’과 ‘항공 서비스’를<br>항공우주특성화 교육 분야로 선정하여<br> 사회가 원하는 맞춤형 인재를 양성합니다.</p>
+                </div>
+                             
+            </div>
+        </div>
+        
+        <div id="contents">
+            <div class="box1">
+                <div class="inner">
+                    <h1>글로벌 항공우주 기업과의 <span>활발한 파트너십</span></h1>
+                    <div class="box1_l">
+                        <h2>A foundation<br>of innovation</h2>
+                        <p>보잉(Boeing) ‘Boeing Day’</p>
+                        <img src="img/air1.png" alt="air1">
+                    </div>
+                    <div class="box1_c">
+                        <h2>Fly Your IDEAs</h2>
+                        <p>에어버스(AIR BUS) ‘AIRBUS101’</p>
+                        <img src="img/air2.png" alt="air2">
+                    </div>
+                    <div class="box1_r">
+                        <h2>Aerospace+STEM<br>= ASTEM</h2>
+                        <p>록히드마틴(Lockheed Martin)<br>‘Falcon Challenger’</p>
+                        <img src="img/air3.png" alt="air3">
+                    </div>
+                    <!-- 초기화 -->
+                </div>
+            </div>
+            <div class="box2">
+                <div class="inner">
+                    <div class="HEADLINE"><img src="img/head.png" alt="HEADLINE"></div>
+                    <div class="box2_set">
+                        <div class="box2_l">
+                            <div class="box2_l_top">
+                                <div class="box2_text">
+                                    <div class="box2_t_l"><p>공지사항</p></div>
+                                    <div class="box2_t_r"><h3>마음 회복을 위한 힐링드로잉 특강 개최</h3></div>
+                                    <!-- 초기화 -->
+                                       </div>
+                            </div>
+                            <div class="box2_l_bottom">
+                                <div class="box2_text">
+                                    <div class="box2_t_l"><p>뉴스</p></div>
+                                    <div class="box2_t_r"><h3>[조선일보 외] 한국항공대, 초·중·고등학생 대상<br>여름방학 항공우주캠프 참가자 모집</h3></div>
+                                     <!-- 초기화 -->
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="box2_r">
+                            <div class="box2_r1">
+                                <div class="box2_btn">연구정보</div>
+                                <img src="img/galaxy.png" alt="galaxy">
+                                <p>국내 대학 최초로 나노 위성 독자 개발<br>우주 안테나 SAR(합성개구 레이더) 연구</p>
+                            </div>
+                            <div class="box2_r2">
+                                <div class="box2_btn">교내뉴스</div>
+                                <img src="img/box2_r2.png" alt="logo_new">
+                                <p>개교 70주년 맞은 한국항공대,<br>70주년 로고 공개</p>
+                            </div>
+                        </div>
+                        <!-- 초기화 -->
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="inner">
+                    <div class="box3_l">
+                        <h2>사업공고</h2>
+                        <p>·[과학기술정보통신부]위성항법탑재체 지상검증전략에 관한 연구<br>
+                           ·[산업통상자원부]2022년 지역대표 중견기업육성사업 비R&D<br>
+                           ·[보건복지부][중개] 유연한 착용형 하지 보조로봇의 중개연구</p>
+                    </div>
+                    <div class="box3_r">
+                        <h2>주요 연구과제 현황</h2>
+                        <p>·한국항공대, 대한항공씨앤디서비스와 협약 체결<br>
+                            ·한국항공대, 2022대학중점연구소 지원사업 선정<br>
+                            ·`국토교통 DNA+ 융합기술대학원` 선정</p>
+                    </div>
+                    <!-- 초기화 -->
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="inner">
+                <div class="copyright">
+                    <p>(10540) 경기도 고양시 덕양구 항공대학로 76<br>
+                        TEL - (02) 300-0114  FAX - (02) 3158-5769 E-mail - webmaster@kau.ac.kr<br>
+                        COPYRIGHT 2012 Korea Aerospace University. All right reserved.</p>
+                </div>
+                <div class="f_logo"><a href="index.html"><img src="img/foo_logo.png" alt="logo"></a></div>
+                <!-- 초기화 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

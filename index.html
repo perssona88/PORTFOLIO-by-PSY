@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <link rel="icon" type="image/png" href="pavi.png"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PSY's Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>	
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #shelf{
+            width:900px;
+            height:210px;
+            background: url("/img/images/shelf-bg.png") no-repeat scroll 0 -25px transparent;
+        }
+        #container{
+            /*border:1px solid magenta;*/
+            width:850px;
+            height:160px;
+            margin-left:25px;
+        }
+        
+        #container img, #container .item{
+            width:100%;
+            height:100%;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            -moz-box-shadow: 0px 5px 5px #777;
+            -webkit-box-shadow: 0px 5px 5px #777;
+            box-shadow: 0px 5px 5px #777;
+        }
+        .itemTitle{
+            padding-top:30px;
+        }
+        #container .selectedItem{
+            -moz-box-shadow: 0 4px 10px #0071BC;
+            -webkit-box-shadow: 0 4px 10px #0071BC;
+            box-shadow: 0 4px 10px #0071BC;
+            border:1px solid #0071BC;
+        }
+        
+        
+        #container2{ 
+            /*border:1px solid magenta;*/
+            width:850px;
+            height:200px;
+            margin-left:25px;
+        }
+        #container2 img, #container2 .item{
+            width:100%;
+            height:100%;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+            -moz-box-shadow: 0px 5px 5px #777;
+            -webkit-box-shadow: 0px 5px 5px #777;
+            box-shadow: 0px 5px 5px #777;
+        }
+        
+        #container .item{
+            width:160px;
+            height:160px;
+            left:0px;
+        }
+        
+           
+.similarity{
+bottom: 5%;
+position: absolute;
+right: 5%;        
+font-size: 2.5em;
+*font-size: 1.3em;
+width: 1.5em;
+height: 1.5em;
+line-height: 1.5em;
+text-align: center;
+}
+.similarity {
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+background: #84C440; /* old browsers */
+background: -moz-linear-gradient(top, #84C440 0%, #3CB64A 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#84C440), color-stop(100%,#3CB64A)); /* webkit */
+-webkit-box-shadow: inset 0px 1px 0px #a1d269;
+-moz-box-shadow: inset 0px 1px 0px #a1d269;
+box-shadow: inset 0px 1px 0px #a1d269; 
+border-color:#8cc63f #6dc043 #359541 #6dc043;
+border-width:1px;
+border-style:solid;
+color:#fff;
+float:left;
+font-size:14px;
+font-weight:bold;
+padding:3px 6px;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.similarity:hover {
+background: #bbde51;
+border-color:#bbde51 #bbde51 #9eba45 #bbde51;
+-webkit-box-shadow: inset 0px 1px 0px #cde671;
+-moz-box-shadow: inset 0px 1px 0px #cde671;
+box-shadow: inset 0px 1px 0px #cde671; 
+cursor:pointer;
+}
+        
+        
+    </style>
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Hero Section Begin -->
+    <section id="start" class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/main.gif">
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+        <!-- Call To Action Section Begin -->
+        <section class="callto sp__callto">
+            <div class="container">
+                <div class="callto__services spad set-bg" data-setbg="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-12 text-left">
+                            <div class="callto__text">
+                                <p>이 웹사이트 포트폴리오는 1920*1080 사이즈에 최적화 되어 있습니다.<br>
+                                    *가시안이며  비상업적 포트폴리오 용도로만 사용됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-10 text-right">
+                            <div class="callto__text">
+                                    <h2>park so young</h2>
+                                    <a href="img/popup/about.jpg" class="play-btn video-popup">ABOUT ME</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call To Action Section End -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <br>
+                        <h2>CARD NEWS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="work">
+            <div class="work__gallery">
+                <div class="grid-sizer"></div>
+                <div class="work__item small__item set-bg" data-setbg="img/work/card01.jpg">
+                    <a href="img/popup/card_c1.png" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 당근마켓</h5>
+                                <ul>
+                                    <li>아껴쓰고/나눠쓰고/바꿔쓰고/당근!</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="img/work/card02.jpg">
+                    <a href="img/popup/card_c2.png" class="play-btn video-popup"><i
+                            class="fa fa-play">
+                        </i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 독도관련 콘텐츠</h5>
+                                <ul>
+                                    <li>독도의날,알고계셨나요?</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="img/work/card03.jpg">
+                    <a href="img/popup/card_c3.png" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 위글위글-브랜드</h5>
+                                <ul>
+                                    <li>일상의 명도와 채도를 높이는 라이프 스타일 브랜드</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="img/work/card04.jpg">
+                    <a href="img/popup/card_c4.png" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 한국항공대학교</h5>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                </div>
+    
+                <div class="work__item small__item set-bg" data-setbg="img/work/card05.jpg">
+                    <a href="img/popup/card_c5.png" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 하나투어</h5>
+                                <ul>
+                                    <li>꿈꾸는 대로 펼쳐지다!</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="img/work/card06.jpg">
+                    <a href="img/popup/card_c6.png" class="play-btn video-popup" ><i
+                            class="fa fa-play"></i></a>
+                            <div class="work__item__hover">
+                                <h5>[카드뉴스] 스마트스토어</h5>
+                                <ul>
+                                    <li>온라인 키덜트 마켓, 쏘굿샵</li>
+                                </ul>
+                            </div>
+                </div>
+                </div>
+        </section>
+
+    <!-- Work Section Begin -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title team__title">
+                    <br>
+                    <h2>BX Design</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/banner01.png">
+                <a href="img/popup/detail-01.jpg" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>[눈높이교육] 새학기, 눈높이와 시작해~봄!</h4>
+                </div>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/banner02.png">
+                <a href="img/popup/detail-02.jpg" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>[현대백화점] 일상을 바꾸는 즐거운 소비습관</h4>
+                </div>
+            </div>
+
+            <div class="work__item wide__item1 set-bg" data-setbg="img/work/banner03.png">
+                <a href="img/popup/detail-03.jpg" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>[올리브영] 가정의 달 기프트</h4>
+                </div>
+            </div>
+
+            <div class="work__item wide__item2 set-bg" data-setbg="img/work/banner04.jpg">
+                <a href="img/popup/detail-04.jpg" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>[한국문화정보원] 문화릴레이 티켓</h4>
+                </div>
+            </div>
+
+            <div class="work__item small__item set-bg" data-setbg="img/work/peng.png">
+                <a href="img/popup/PENG.png" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                        <div class="work__item__hover">
+                            <h5>[공모전] 부산시 시어 캐릭터</h5>
+                            <ul>
+                                <li>PENGGO</li>
+                            </ul>
+                        </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/pop.jpg">
+                <a href="img/popup/insta.png" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                        <div class="work__item__hover">
+                            <h5>[POP-UP] 스마트스토어</h5>
+                        </div>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/leaflet.jpg">
+                <a href="img/popup/LEGO.png" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>[레고] 편집디자인-리플렛</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+
+     <!-- Logo Begin -->
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title team__title">
+                    <br>
+                    <h2>LOGO Design</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logo spad">
+        <div class="container">
+            <div class="logo__carousel owl-carousel">
+                <a href="img/popup/karrot.png" class="logo__item play-btn video-popup"><img src="img/icons/logo01.png" alt="danggun"></a>
+                <a href="img/popup/hana.png" class="logo__item play-btn video-popup"><img src="img/icons/logo02.png" alt="hana"></a>
+                <a href="img/popup/LEGO-LOGO.png" class="logo__item play-btn video-popup"><img src="img/icons/logo03.png" alt="lego"></a>
+                <a href="img/popup/ssogood-01.jpg" class="logo__item play-btn video-popup"><img src="img/icons/logo04.png" alt="ssogood"></a>
+                <a href="img/popup/PSLR LOGO.png" class="logo__item play-btn video-popup"><img src="img/icons/logo05.png" alt="competition"></a>
+                            </div>
+        </div>
+    </div>
+    <!-- Logo End -->
+    
+    <!-- Team Section Begin -->
+    <section id="web" class="team spad set-bg" data-setbg="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <h2>Web Design</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/project01.jpg">
+                        <div class="team__item__text">
+                            <h4>당근마켓</h4>
+                            <p>daangn.com</p>
+                            <div class="team__item__social">
+                                <a href="project1/index.html" target="_blank"><img src="img/web.png"></a>
+                                <a href="sub1.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/project02.jpg">
+                        <div class="team__item__text">
+                            <h4>건축공간연구원</h4>
+                            <p>auri.re.kr</p>
+                            <div class="team__item__social">
+                                <a href="project1-1/index.html" target="_blank"><img src="img/web.png"></a>
+                                <a href="sub2.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/project03.jpg">
+                        <div class="team__item__text">
+                            <h4>오늘의집</h4>
+                            <p>ohou.se</p>
+                            <div class="team__item__social">
+                                <a href="project1-2/index.html" target="_blank"><img src="img/web.png"></a>
+                                <a href="sub3.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/project04.jpg">
+                        <div class="team__item__text">
+                            <h4>한국항공대학교</h4>
+                            <p>kau.ac.kr</p>
+                            <div class="team__item__social">
+                                <a href="project2/index.html" target="_blank"><img src="img/web.png"></a>
+                                <a href="sub4.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/project05.jpg">
+                        <div class="team__item__text">
+                            <h4>하나투어</h4>
+                            <p>hanatour.com</p>
+                            <div class="team__item__social">
+                                <a href="project3/index.html" target="_blank"><img src="img/web.png"></a>
+                                <a href="sub5.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/project06.jpg">
+                        <div class="team__item__text">
+                            <h4>스마트스토어(쏘굿샵)</h4>
+                            <p>sso_good#</p>
+                            <div class="team__item__social" target="_blank">
+                                <a href="https://smartstore.naver.com/sso_good
+                                " target="_blank"><img src="img/web.png"></a>
+                                <a href="sub6.html"><img src="img/Detail.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="callto__text">
+                <a href="" class="play-btn">▲TOP</a>
+        </div> -->
+             <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This portfolio is made by PSY
+                        </p>
+                     </div>
+                     <div class="callto__text">
+                        <a href="#start" class="play-btn">TOP <img src="img/up-solid.gif"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
