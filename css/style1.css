@@ -399,6 +399,11 @@ a:focus {
   width: 16%;
 }
 
+.slider_section .slider_content #carouselExampleIndicators .detail_box .btn-box .btn-1 img {
+  width: 12%;
+  padding-bottom: 5px;
+}
+
 .slider_section .slider_content #carouselExampleIndicators .detail_box .btn-box .btn-1 {
   display: inline-block;
   padding: 8px 0;
